@@ -1,0 +1,25 @@
+$font-family: 'Roboto', sans-serif;
+
+:root {
+    --background-body: #EFF1F3;  
+    --background-header: rgba(196, 196, 196, 0.10);
+    --text: #000000;
+}
+
+:root .dark-theme {
+    --background-body: #00272B;  
+    --background-header: #00272B;
+    --text: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-body);
+    font-family: $font-family;
+    button {
+        border: none;
+        background-color: transparent;
+    }
+}

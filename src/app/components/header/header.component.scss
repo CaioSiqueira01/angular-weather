@@ -1,0 +1,34 @@
+:host {
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--background-header);
+        margin-top: 2.2rem;
+        height: 10vh;
+    
+        .input__container {
+            display: flex;
+    
+            input {
+                height: 5vh;
+                border-radius: 0.625rem;
+                border: none;
+            }
+    
+            button {
+                font-size: 1.2rem;
+            }
+        }
+        
+        h1 {
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+    
+        i {
+            font-size: 1.2rem;
+            color: var(--text);
+        }
+    }
+}
