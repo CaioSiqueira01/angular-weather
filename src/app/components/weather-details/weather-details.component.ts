@@ -8,13 +8,13 @@ import { WeatherDashboardComponent } from '../weather-dashboard/weather-dashboar
   styleUrls: ['./weather-details.component.scss']
 })
 export class WeatherDetailsComponent  {
-  @Input() weatherData: any; // Inicialize como um objeto vazio
+  @Input() weatherData: any; 
 
   constructor(private weatherService: WeatherService) {}
 
   getWeatherData(city: string) {
     this.weatherService.getWeather(city).subscribe((data: any) => {
-      this.weatherData = data; // Atribua os dados recebidos ao objeto weatherData
+      this.weatherData = data; 
     });
   }
 
