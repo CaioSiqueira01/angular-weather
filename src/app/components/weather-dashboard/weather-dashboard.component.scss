@@ -1,0 +1,35 @@
+.dashboard {
+    background-image: url(../../../assets/Weather-backgrounds/Hurricane.jpg);
+    height: 40vh;
+    border-radius: 1.25rem;
+    width: 90%;
+    margin: 2rem auto;
+
+    .dashboard__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #FFFFFF;
+        height: 100%;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            margin: .9rem .9rem 0 .9rem;
+        }
+
+        .mid {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            .temperature {
+                font-size: 2.8rem;
+            }   
+        }
+
+        .bottom {
+            margin: 0 0 .9rem .9rem;
+        }
+    }
+}

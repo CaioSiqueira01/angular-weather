@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,15 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Output() searchCity = new EventEmitter<string>();
   public icon: string = 'bx bxs-moon';
+  city: string = '';
 
-  toogle(){
+  constructor() {}
+
+  toogle() {
     const theme = document.body.classList.toggle('dark-theme');
 
     if (theme) {
-      this.icon = 'bx bxs-sun'
+      this.icon = 'bx bxs-sun';
     } else {
-      this.icon = 'bx bxs-moon'
+      this.icon = 'bx bxs-moon';
     }
+  }
+
+  onSearch() {
+    this.searchCity.emit(this.city);
   }
 }

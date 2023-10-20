@@ -1,0 +1,15 @@
+<div class="dashboard">
+    <div class="dashboard__content">
+        <div class="top">
+            <span class="date">{{ getCurrentDate() }}</span>
+            <span class="hour">{{ getCurrentTime() }}</span>
+        </div>
+        <div class="mid" *ngIf="weatherData">
+            <span class="temperature">{{ kelvinToCelsius(weatherData.main.temp).toFixed(1) }} &#8451;</span>
+            <span>{{ weatherData.weather[0].description }}</span>
+        </div>
+        <div class="bottom" *ngIf="weatherData">
+            <span><i class='bx bx-location-plus' style='color:#ffffff'  ></i> {{ weatherData.name }}, {{ weatherData.sys.country }}</span>
+        </div>
+    </div>
+</div>
