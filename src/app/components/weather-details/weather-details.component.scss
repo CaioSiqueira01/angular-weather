@@ -1,0 +1,26 @@
+.details__container {
+    .details__content {
+        display: flex;
+        flex-direction: column;
+    
+        
+        .weather__details {
+            display: flex;
+            justify-content: space-evenly;
+            color: var(--text);
+            margin-bottom: .5rem;
+
+            .weather__details-information {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: bold;
+
+                sup {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

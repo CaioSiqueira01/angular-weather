@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { WeatherDashboardComponent } from './components/weather-dashboard/weather-dashboard.component';
+import { WeatherDetailsComponent } from './components/weather-details/weather-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WeatherDashboardComponent
+    WeatherDashboardComponent,
+    WeatherDetailsComponent
   ],
   imports: [
     BrowserModule,

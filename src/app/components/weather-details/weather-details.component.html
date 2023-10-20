@@ -1,0 +1,58 @@
+<div class="details__container">
+    <div class="details__content">
+        <div class="weather__details">
+            <div class="weather__details-information">
+                <i class='bx bxs-thermometer'>&#8451;</i>
+                <p>Temp</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ kelvinToCelsius(weatherData?.main?.temp_min).toFixed(1) }}</span>
+                <p>Min</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ kelvinToCelsius(weatherData?.main?.temp).toFixed(1) }}</span>
+                <p>Temp</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ kelvinToCelsius(weatherData?.main?.temp_max).toFixed(1) }}</span>
+                <p>Max</p>
+            </div>
+        </div>
+        <div class="weather__details">
+            <div class="weather__details-information">
+                <i class='bx bx-time'><sup>hPa</sup></i>
+                <p>Pressu</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ weatherData?.main?.pressure }}</span>
+                <p>Sea<br>Level</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ weatherData?.main?.feels_like }}</span>
+                <p>Feels<br>Likes</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ weatherData?.main?.grnd_level }}</span>
+                <p>Ground<br>Level</p>
+            </div>
+        </div>
+        <div class="weather__details">
+            <div class="weather__details-information">
+                <i class='bx bx-wind'></i>
+                <p>Wind</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ weatherData?.wind?.speed }}</span>
+                <p>Wind<br>speed</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ weatherData?.wind?.gust }}</span>
+                <p>Wind<br>Gust</p>
+            </div>
+            <div class="weather__details-information">
+                <span>{{ weatherData?.wind?.deg }}</span>
+                <p>Wind<br>Degree</p>
+            </div>
+        </div>
+    </div>
+</div>
